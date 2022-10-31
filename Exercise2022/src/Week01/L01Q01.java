@@ -23,6 +23,11 @@ public class L01Q01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        System.out.println("Hello\nWorld");
+        System.out.println("\"");
+        System.out.println("Hello\tWorld");
+        System.out.println("\\t is a horizontal tab");
     }
     
 }
