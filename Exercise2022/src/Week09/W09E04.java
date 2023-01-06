@@ -8,7 +8,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
-
 /**
  *
  * @author Badrul
@@ -20,24 +19,23 @@ public class W09E04 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        try{
-            ObjectInputStream input = new ObjectInputStream(new FileInputStream("finteger.dat"));
-            int sum =0;
-            for(int i=0;i<10;i++){   
-                int num =  input.readInt();
+        try {
+            ObjectInputStream input = new ObjectInputStream(new FileInputStream("c:/temp/integer.dat"));
+            int sum = 0;
+            for (int i = 0; i < 10; i++) {
+                int num = input.readInt();
                 sum += num;
                 System.out.print(num + " ");
-                
+
             }
             System.out.println("");
             System.out.println("Total value : " + sum);
             input.close();
-            
-        }catch(IOException e){
+
+        } catch (IOException e) {
             System.out.println("Error File not found");
         }
-        
-        
+
     }
-    
+
 }

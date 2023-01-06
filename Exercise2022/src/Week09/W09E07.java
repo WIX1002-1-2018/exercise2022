@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Week09;
 
@@ -11,19 +12,18 @@ import java.util.Random;
 
 /**
  *
- * @author Badrul
+ * @author pensyarah
  */
-public class W09E01 {
+public class W09E07 {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         // TODO code application logic here
+
         Random rand = new Random();
-
         try {
-
             PrintWriter write = new PrintWriter(new FileOutputStream("c:/temp/integer.txt"));
 
             for (int i = 0; i < 100; i++) {
@@ -32,10 +32,8 @@ public class W09E01 {
                 write.print(num + " ");
             }
 
-            write.close();
-
         } catch (FileNotFoundException e) {
-            System.out.println("Error");
+            System.out.println(e);
         }
 
     }
