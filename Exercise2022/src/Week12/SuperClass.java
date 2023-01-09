@@ -21,10 +21,12 @@ public class SuperClass {
     }
 
     public SuperClass(String name) {
+        System.out.println("Constructor SuperClass with Name");
         this.name = name;
     }
 
     public SuperClass(String name, int age) {
+        System.out.println("Constructor SuperClass with Name and Age");
         this.name = name;
         this.age = age;
     }
@@ -76,6 +78,12 @@ public class SuperClass {
     }
     
     public void printNewAge(int ageTwo){
-        System.out.println("New Age (From Class) (Overloading) :" + ageTwo);
+        this.ageTwo = ageTwo;
+        System.out.println("New Age (From Class) (Overloading) :" + this.ageTwo);
+     }
+    
+    @Override
+    public String toString(){
+        return "Full Name : " + this.name + " Age: " + this.age ;
     }
 }

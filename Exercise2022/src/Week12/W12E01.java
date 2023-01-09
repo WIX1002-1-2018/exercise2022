@@ -35,6 +35,7 @@ public class W12E01 {
         classThree.printName();
         classThree.printAge();
         System.out.println("Print Again :" + classThree.inputAge());
+        System.out.println(classThree.toString());
         
         
     }
